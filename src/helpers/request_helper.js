@@ -1,18 +1,15 @@
-const RequestHelper = function (url) {
-  this.url = url
-}
-
-RequestHelper.prototype.get = function (onComplete) {
-  const xhr = new XMLHttpRequest();
-  xhr.open('GET', this.url);
-  xhr.addEventListener('load', function() {
-    if(this.status !== 200){
-      return;
-    }
-    const data = JSON.parse(this.responseText);
-    onComplete(data);
-  });
-  xhr.send();
+const Request = function (url) {
+  this.url = url;
 };
 
-module.exports = RequestHelper;
+Request.prototype.get = function () {
+  return fetch(this.url)
+  .then(res => res.json());
+
+  //fetch is a part of dom makes a network request and returns a promise
+  //res is response from fetch that is coming from network...>>> res.json returns a promise
+};
+
+
+
+module.exports = Request;
