@@ -22,12 +22,12 @@ CharacterInfo.prototype.setName = function (character) {
 
 CharacterInfo.prototype.setTitles = function (character) {
   if(character.titles.length != 0) {
-    const titles = document.createElement('p')
+    const titles = document.createElement('h5')
     titles.textContent = "Titles: "
     this.element.appendChild(titles);
-    const titleList = document.createElement("ul");
-    for (title of character.titles) {
-      const titlename = document.createElement("li");
+     const titleList = document.createElement("p");
+     for (title of character.titles) {
+      const titlename = document.createElement("p");
       titlename.textContent = title;
       titleList.appendChild(titlename);
       this.element.appendChild(titleList);
