@@ -1,12 +1,3 @@
-#align-left {
-  margin-right: auto;
-}
-
-
-img {
-  height: 300px;
-  width: auto;
-  }
 
 h3, h1, div, p, ul, li, h4, h5 {
   text-align: center;
@@ -18,34 +9,4 @@ body {
   background-size: cover;
   background-position: center;
   font-family: 'Roboto', sans-serif;
-}
-
-
-.centered {
-  text-align: center;
-}
-
-.inline {
-  display: inline;
-}
-
-.block {
-  display: block;
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-
-
-
-.container {
-  background: white;
-  width: 50em;
-  margin-left: 225px;
-
-}
-.center-field {
-  display: block;
-    margin-left: 30%;
-    margin-bottom: 3%;
-    margin-top: 3%;
 }
